@@ -1,0 +1,42 @@
+{
+  "name": "geomunicipios",
+  "version": "1.0.0",
+  "description": "Identifique em que município brasileiro se situa uma certa coordenada",
+  "license": "MIT",
+  "author": "Daniel Luz <dev.npm@mernen.com> (https://github.com/mernen)",
+  "keywords": [
+    "brasil",
+    "geolocalizacao",
+    "municipios"
+  ],
+  "repository": "github:mernen/geomunicipios",
+  "module": "build/module/index.js",
+  "modules.root": "build/module",
+  "types": "build/module/index.d.ts",
+  "main": "build/node/index.js",
+  "sideEffects": false,
+  "files": [
+    "build/",
+    "dados/"
+  ],
+  "scripts": {
+    "build": "yarn -s build:node && yarn -s build:module",
+    "build:node": "tsc --build tsconfig.node.json",
+    "build:module": "tsc --build tsconfig.module.json",
+    "clean": "rm -rf build/",
+    "lint": "eslint --ext .ts,.js ./src",
+    "prepare": "yarn -s build",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@types/node": "12.x",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "jest": "^26.0.0",
+    "ts-jest": "^26.0.0",
+    "typescript": "~4.0.0"
+  }
+}

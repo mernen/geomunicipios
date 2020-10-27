@@ -1,0 +1,3 @@
+[submodule "test/municipios-brasileiros"]
+	path = test/municipios-brasileiros
+	url = https://github.com/kelvins/Municipios-Brasileiros.git

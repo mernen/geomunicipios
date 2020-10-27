@@ -1,0 +1,88 @@
+env:
+  commonjs: true
+  es6: true
+parser: "@typescript-eslint/parser"
+plugins:
+  - "@typescript-eslint"
+extends:
+  - eslint:recommended
+  - "plugin:@typescript-eslint/eslint-recommended"
+  - "plugin:@typescript-eslint/recommended"
+parserOptions:
+  ecmaVersion: 2018
+rules:
+  array-bracket-newline: [warn, consistent]
+  array-bracket-spacing: warn
+  arrow-spacing: error
+  block-spacing: error
+  brace-style: error
+  comma-dangle: [error, always-multiline]
+  comma-spacing: error
+  complexity: warn
+  computed-property-spacing: error
+  curly: error
+  dot-location: [error, property]
+  eol-last: error
+  eqeqeq: [error, always, {null: ignore}]
+  func-call-spacing: error
+  generator-star-spacing: [error, {before: false, after: true}]
+  grouped-accessor-pairs: error
+  guard-for-in: warn
+  key-spacing: error
+  keyword-spacing: error
+  linebreak-style: error
+  max-len: [warn, 140]
+  max-params: [warn, 5]
+  max-statements-per-line: warn
+  no-bitwise: warn
+  no-duplicate-imports: error
+  no-lonely-if: warn
+  no-return-await: warn
+  no-throw-literal: error
+  no-trailing-spaces: error
+  no-undef-init: warn
+  no-unmodified-loop-condition: error
+  no-unneeded-ternary: warn
+  no-useless-call: warn
+  no-useless-concat: warn
+  no-useless-rename: error
+  no-var: error
+  no-whitespace-before-property: error
+  object-curly-newline: error
+  object-shorthand: warn
+  operator-linebreak: [warn, before]
+  prefer-arrow-callback: warn
+  prefer-const: off
+  prefer-object-spread: warn
+  prefer-numeric-literals: error
+  prefer-regex-literals: error
+  prefer-rest-params: warn
+  prefer-spread: warn
+  quotes: [error, single, {avoidEscape: true, allowTemplateLiterals: true}]
+  rest-spread-spacing: error
+  semi-spacing: error
+  semi: error
+  sort-imports: [error, {ignoreCase: true, ignoreDeclarationSort: true}]
+  space-before-blocks: error
+  space-before-function-paren: [error, {anonymous: never, named: never, asyncArrow: always}]
+  space-in-parens: error
+  space-infix-ops: error
+  space-unary-ops: error
+  spaced-comment: [error, always, {exceptions: ['@__PURE__']}]
+  switch-colon-spacing: error
+  template-curly-spacing: error
+  template-tag-spacing: error
+  unicode-bom: error
+  yield-star-spacing: error
+  "@typescript-eslint/consistent-type-assertions": off
+  "@typescript-eslint/explicit-function-return-type": off
+  "@typescript-eslint/member-delimiter-style": off
+  "@typescript-eslint/naming-convention":
+    - warn
+    - selector: variableLike
+      format: [camelCase]
+  "@typescript-eslint/no-empty-function": off
+  "@typescript-eslint/no-explicit-any": off
+  "@typescript-eslint/no-use-before-define": off
+  "@typescript-eslint/no-non-null-assertion": off
+  "@typescript-eslint/no-unused-vars": off

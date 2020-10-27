@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "test/**/*.ts"
+  ],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "types": [
+      "jest",
+      "node"
+    ]
+  }
+}
